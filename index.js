@@ -1,8 +1,6 @@
-// Create a new task by adding to the arrays
-// A new task will be created as incomplete
 function newTask(title, description) {
-  const task = {
-    title: title,
+  const task = { // instead of keeping track of all the details in individual arrays, we are now using an object 
+    title: title,                       //...to group the task data together and keep this code more organized.
     description: description,
     complete: false,
 
@@ -29,3 +27,9 @@ task1.logState();// Clean Cat Litter has been completed
 
 // for now, let's just make sure we see our tasks
 console.log(tasks);
+
+// We are now programming in an object oriented way.We are using objects to group state(information) and 
+//logic(behaviour(codes written in methods)) in order to keep the code more organized.Now everything associated 
+//to a task has been encapsulated inside the task object.
+
+//OO bundles together state and logic into an object that can be represented as a single variable.
